@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>registration form</title>
+  </head>
+  <style>
+    input {
+      margin-bottom: 5px;
+      border-radius: 5px;
+      margin-top: 5px;
+      padding: 20px;
+    }
+    .align-left {
+      float: left;
+    }
+    .image {
+      background-image: url(https://thumbs.dreamstime.com/b/green-leaf-texture-dew-drop-fresh-spring-nature-wallpaper-background-green-leaf-texture-dew-drop-fresh-nature-wallpaper-167543228.jpg);
+
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .project {
+      color: #fbfcf6;
+      padding-right: 1050px;
+      padding-top: 10px;
+    }
+    /* .project {
+      padding-left: 600px;
+      padding-top: 50px;
+    } */
+    .home {
+      padding-left: 1000px;
+      color: #fbfcf6;
+      /* margin-top: -50px; */
+    }
+  </style>
+
+  <body align="center">
+    <div class="image">
+      <a
+        href="https://lalithagudivada.github.io/full-stack-course-9/"
+        class="project"
+        >click here for project</a
+      >
+      <a class="home" href="home.html">go back home</a>
+      <table align="center" style="color: white">
+        <!-- <tr class="project" style="padding-left: 1000px">
+          <td>
+            <a href="https://lalithagudivada.github.io/full-stack-course-9/"
+              >click here for project</a
+            >
+          </td>
+        </tr> -->
+        <tr>
+          <td colspan="2">
+            <h1><u>Registeration form</u></h1>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label><h3>Registration Number:</h3></label>
+          </td>
+          <td>
+            <input
+              class="align-left"
+              type="text"
+              placeholder="registration number"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label><h3>Name of the Student:</h3></label>
+          </td>
+          <td>
+            <input class="align-left" type="text" placeholder="name" />
+          </td>
+        </tr>
+
+        <tr>
+          <td align="left">
+            <label><h3>Mobile Number:</h3> </label>
+          </td>
+          <td>
+            <input
+              class="align-left"
+              type="numerical"
+              placeholder="91+ xxxxxxxxxx"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td align="left">
+            <label><h3>Gender:</h3></label>
+          </td>
+          <td>
+            <input type="radio" name="gender" id="male" />
+            <label>male</label>
+            <input type="radio" name="gender" id="female" />
+            <label>female</label>
+          </td>
+        </tr>
+        <tr>
+          <td align="left">
+            <label><h3>Branch:</h3></label>
+          </td>
+          <td>
+            <input class="align-left" type="text" placeholder="branch" />
+          </td>
+        </tr>
+        <tr>
+          <td align="left">
+            <label><h3>Date of Birth:</h3></label>
+          </td>
+          <td><input class="align-left" type="date" name="" id="" /></td>
+        </tr>
+        <tr>
+          <td align="left">
+            <label><h3>E Mail:</h3></label>
+          </td>
+          <td>
+            <input
+              class="align-left"
+              type="numerical"
+              placeholder="email@example.com"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="left">
+            <label><h3>Address:</h3></label>
+          </td>
+          <td>
+            <input
+              type="text"
+              style="padding: 35px"
+              placeholder="Enter the address"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button
+              style="
+                padding: 5px;
+                height: 65px;
+                width: 70px;
+                margin: 10px;
+                background: linear-gradient(45deg, #2bda34, #fbfcf6);
+              "
+            >
+              Submit
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
