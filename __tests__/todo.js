@@ -26,7 +26,7 @@ describe("Todolist Test Suite", () => {
       dueDate: j,
     });
   });
-  test("Should add new todo", () => {
+  test("Add new todo", () => {
     const todoItemsCount = all.length;
     add({
       title: "Test todo",
@@ -35,22 +35,22 @@ describe("Todolist Test Suite", () => {
     });
     expect(all.length).toBe(todoItemsCount + 1);
   });
-  test("should mark a todo as completed", () => {
+  test("Mark a todo as completed", () => {
     expect(all[0].completed).toBe(false);
     markAsComplete(0);
     expect(all[0].completed).toBe(true);
   });
-  test("Should return a list of dueToday items", () => {
+  test("Return a list of dueToday items", () => {
     var c = dueToday();
     expect(all[0].title).toBe(c[0].title);
     expect(all[0].dueDate).toBe(c[0].dueDate);
   });
-  test("Should return a list of overdue items", () => {
+  test("Return a list of overdue items", () => {
     var c = overdue();
     expect(all[1].title).toBe(c[0].title);
     expect(all[1].dueDate).toBe(c[0].dueDate);
   });
-  test("Should return a list of dueLater items", () => {
+  test("Return a list of dueLater items", () => {
     var c = dueLater();
     expect(all[2].title).toBe(c[0].title);
     expect(all[2].dueDate).toBe(c[0].dueDate);

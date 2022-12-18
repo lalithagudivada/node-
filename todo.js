@@ -9,19 +9,12 @@ const todoList = () => {
   };
 
   const overdue = () => {
-    // Write the date check condition here and return the array of overdue items accordingly.
-    // FILL YOUR CODE HERE
-    // ..
-    // ..
-    // ..
     var z = new Date();
     z.setDate(z.getDate() - 1);
     const a = z.toLocaleDateString("en-CA");
-    // const a=formattedDate(new Date(new Date().setDate(dateToday.getDate() - 1)));
     let b = [];
     for (let i = 0; i < all.length; i++) {
       if (all[i].dueDate == a) {
-        //console.log(all[i]);
         b.push(all[i]);
       }
     }
@@ -29,16 +22,10 @@ const todoList = () => {
   };
 
   const dueToday = () => {
-    // Write the date check condition here and return the array of todo items that are due today accordingly.
-    // FILL YOUR CODE HERE
-    // ..
-    // ..
-    // ..
     const a = new Date().toLocaleDateString("en-CA");
     let b = [];
     for (let i = 0; i < all.length; i++) {
       if (all[i].dueDate == a) {
-        //console.log(all[i]);
         b.push(all[i]);
       }
     }
@@ -46,11 +33,6 @@ const todoList = () => {
   };
 
   const dueLater = () => {
-    // Write the date check condition here and return the array of todo items that are due later accordingly.
-    // FILL YOUR CODE HERE
-    // ..
-    // ..
-    // ..
     var z = new Date();
     z.setDate(z.getDate() + 1);
     var a = z.toLocaleDateString("en-CA");
@@ -65,12 +47,6 @@ const todoList = () => {
   };
 
   const toDisplayableList = (list) => {
-    // Format the To-Do list here, and return the output string as per the format given above.
-    // FILL YOUR CODE HERE
-    // ..
-    // ..
-    // ..
-    // return OUTPUT_STRING
     let s = "";
     for (let i = 0; i < list.length; i++) {
       if (list[i].completed == true) {
